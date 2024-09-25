@@ -8,7 +8,7 @@ author: LiPtP
 ---
 
 {: .box-note}
-Discrete-time signals can be obtained by sampling continuous signals at equal intervals, typically represented as sequences. Common discrete-time signals include the unit impulse, unit step, rectangular, real exponential, and complex exponential sequences. Sequence operations involve addition, multiplication, shifting, and energy calculations, with square summability and absolute summability being important classifications.<br/> Transformations of discrete-time signals include the Discrete-Time Fourier Transform (DTFT) and the z-transform, which have a close relationship, particularly in their correspondence on the unit circle. Discrete-time systems (LTI systems) generate outputs through the convolution of input signals with the unit impulse response, considering stability and causality. <br/>The system function and frequency response are key to analyzing system behavior, with filters categorized into FIR (no poles) and IIR (with poles) types; the former is a non-recursive structure, while the latter involves feedback mechanisms.
+**Discrete-time signals** can be obtained by sampling continuous signals at equal intervals, typically represented as sequences. Common discrete-time signals include the unit impulse, unit step, rectangular, real exponential, and complex exponential sequences. Sequence operations involve addition, multiplication, shifting, and energy calculations, with square summability and absolute summability being important classifications.<br/> Transformations of discrete-time signals include the **Discrete-Time Fourier Transform (DTFT) and the z-transform**, which have a close relationship, particularly in their correspondence on the unit circle. Discrete-time systems (LTI systems) generate outputs through the convolution of input signals with the unit impulse response, considering stability and causality. <br/>**The system function and frequency response** are key to analyzing system behavior, with filters categorized into FIR (no poles) and IIR (with poles) types; the former is a non-recursive structure, while the latter involves feedback mechanisms.
 
 ## 离散时间信号
 
@@ -17,17 +17,17 @@ Discrete-time signals can be obtained by sampling continuous signals at equal in
 
 ### 常见的离散时间信号
 
-- 单位冲激序列：$x(n) = \delta(n)$
-- 单位阶跃序列：$x(n) = u(n)$，**本书中采用 $u(n)$ 表示，而非《信号与系统》中的$\epsilon(n)$**。
+- 单位冲激序列：$$x(n) = \delta(n)$$
+- 单位阶跃序列：$$x(n) = u(n)$$，**本书中采用 $$u(n)$$ 表示，而非《信号与系统》中的$$\epsilon(n)$$**。
 
 - 矩形序列：0 ～ N-1 为 1，其余为 0 的序列。
 
 - 实指数序列
-- 复指数序列: $x(n) = r^n e^{j \omega_0 n}$
-- 正弦序列： $x(n) = \sin(\omega_0 n)$
+- 复指数序列: $$x(n) = r^n e^{j \omega_0 n}$$
+- 正弦序列： $$x(n) = \sin(\omega_0 n)$$
 
 离散周期序列中，周期必定是整数周期。例如：
-$ \sin{\frac{16\pi n}{5}}$ 的周期就是 5，而非 5/8.
+$$ \sin{\frac{16\pi n}{5}}$$ 的周期就是 5，而非 5/8.
 
 ### 序列的运算
 
@@ -35,11 +35,11 @@ $ \sin{\frac{16\pi n}{5}}$ 的周期就是 5，而非 5/8.
 
 2. 序列的移位
 
-3. 序列的能量：$S = \frac{1}{2}\sum_{n=-\infty}^{\infty}|x(n)|^2$
+3. 序列的能量：$$S = \frac{1}{2}\sum_{n=-\infty}^{\infty}|x(n)|^2$$
 
-   - 若$S \lt \infty$，则称序列为平方可和序列。
-   - 若$\sum_{n=-\infty}^{\infty}|x(n)| \lt \infty$，则称序列为绝对可和序列。
-   - 有界序列：$|x(n)| \leq M$，则称序列为有界序列。
+   - 若$$S \lt \infty$$，则称序列为平方可和序列。
+   - 若$$\sum_{n=-\infty}^{\infty}|x(n)| \lt \infty$$，则称序列为绝对可和序列。
+   - 有界序列：$$|x(n)| \leq M$$，则称序列为有界序列。
 
 4. 任意一个序列都可以分解成一个偶对称序列和一个奇对称序列的和。
 
@@ -49,15 +49,15 @@ $ \sin{\frac{16\pi n}{5}}$ 的周期就是 5，而非 5/8.
 
 ### DTFT
 
-- $X(e^{j\omega}) = \sum_{n=-\infty}^{\infty} x(n) e^{-j\omega n}$
-- 是以$2\pi$为周期的函数。
+- $$X(e^{j\omega}) = \sum_{n=-\infty}^{\infty} x(n) e^{-j\omega n}$$
+- 是以$$2\pi$$为周期的函数。
 - 一个序列拥有 DTFT 的条件：**序列是绝对可和的**。因此有限长序列的 DTFT 总是存在。
-- $\omega$ ： 频率对采样频率作归一化后的角频率，满足$\frac{\omega}{2\pi} = \frac{f}{f_s}$。
-- IDTFT: $x(n) = \frac{1}{2\pi} \int_{-\pi}^{\pi} X(e^{j\omega}) e^{j\omega n} d\omega$，序列的 DTFT 和 IDTFT 互为逆变换。
+- $$\omega$$ ： 频率对采样频率作归一化后的角频率，满足$$\frac{\omega}{2\pi} = \frac{f}{f_s}$$。
+- IDTFT: $$x(n) = \frac{1}{2\pi} \int_{-\pi}^{\pi} X(e^{j\omega}) e^{j\omega n} d\omega$$，序列的 DTFT 和 IDTFT 互为逆变换。
 
 ### z 变换
 
-- $X(z) = \sum_{n=-\infty}^{\infty} x(n) z^{-n}$
+- $$X(z) = \sum_{n=-\infty}^{\infty} x(n) z^{-n}$$
 - 拥有收敛域。和**连续时间系统**的 Laplace 变换类似，但后者的收敛域是一个平面，如虚轴左侧；前者的收敛域一般以圆为分界。
   - 右边序列的收敛域在半径为$R_-$的圆外
   - 左边序列则相反
@@ -65,15 +65,15 @@ $ \sin{\frac{16\pi n}{5}}$ 的周期就是 5，而非 5/8.
 - **常用 z 变换**：
   | 序列 | z 变换 | 收敛域 |
   | :-------------------: | :------------------------------------: | :------------------: |
-  | $a^n u(n)$ | $\frac{z}{z-a}$ | $\|z\| \gt \|a\|$ |
-  | $u(n)$ | $\frac{z}{z-1}$ | $\|z\| \gt 1$ |
-  | $n u(n)$ | $\frac{z}{(z-1)^2}$ | $\|z\| \gt 1$ |
-  | $-a^n u(-n-1)$ | $\frac{z}{z-a}$ | $\|z\| \lt \|a\|$ |
-  | $\delta(n)$ | $1$ | 所有 $z$ |
-  | $\delta(n-k)$ | $z^{-k}$ | 所有 $z$ |
-  | $n^2 u(n)$ | $\frac{z(z+1)}{(z-1)^3}$ | $\|z\| \gt 1$ |
-  | $\cos(\omega n) u(n)$| $\frac{z(z-\cos\omega)}{z^2 - 2\cos\omega z + 1}$ | $\|z\| \gt 1$ |
-  | $\sin(\omega n) u(n)$| $\frac{z\sin\omega}{z^2 - 2\cos\omega z + 1}$ | $\|z\| \gt 1$ |
+  | $$a^n u(n)$$ | $$\frac{z}{z-a}$$ | $$\|z\| \gt \|a\|$$ |
+  | $$u(n)$$ | $$\frac{z}{z-1}$$ | $$\|z\| \gt 1$$ |
+  | $$n u(n)$$ | $$\frac{z}{(z-1)^2}$$ | $$\|z\| \gt 1$$ |
+  | $$-a^n u(-n-1)$$ | $$\frac{z}{z-a}$$ | $$\|z\| \lt \|a\|$$ |
+  | $$\delta(n)$$ | $$1$$ | 所有 $$z$$ |
+  | $$\delta(n-k)$$ | $$z^{-k}$$ | 所有 $$z$$ |
+  | $$n^2 u(n)$$ | $$\frac{z(z+1)}{(z-1)^3}$$ | $$\|z\| \gt 1$$ |
+  | $$\cos(\omega n) u(n)$$| $$\frac{z(z-\cos\omega)}{z^2 - 2\cos\omega z + 1}$$ | $$\|z\| \gt 1$$ |
+  | $$\sin(\omega n) u(n)$$| $$\frac{z\sin\omega}{z^2 - 2\cos\omega z + 1}$$ | $$\|z\| \gt 1$$ |
 - 反 z 变换
   - 部分分式分解（乘一个 z\*1/z）
   - 留数法
@@ -81,12 +81,14 @@ $ \sin{\frac{16\pi n}{5}}$ 的周期就是 5，而非 5/8.
 
 ### z 变换 和 DTFT 之间的关系
 
-- 当$z = e^{j\omega_0}$时，$X(z) = X(e^{j\omega_0})$。采样序列单位圆上的 z 变换和 DTFT 相同。
+- 当$$z = e^{j\omega_0}$$时，$$X(z) = X(e^{j\omega_0})$$。采样序列单位圆上的 z 变换和 DTFT 相同。
 - z 平面单位圆上的一周正好是 DTFT 周期。
 
 ### Parseval Theorem
 
-- t-domain 中算出的能量 和 f-domain 中算出的能量相同。即： $\sum_{n=-\infty}^{\infty}|x(n)|^2 = \frac{1}{2\pi} \int_{-\pi}^{\pi} |X(e^{j\omega})|^2 d\omega$
+- t-domain 中算出的能量 和 f-domain 中算出的能量相同。即：
+
+   $$\sum_{n=-\infty}^{\infty}|x(n)|^2 = \frac{1}{2\pi} \int_{-\pi}^{\pi} |X(e^{j\omega})|^2 d\omega$$
 
 ## 离散时间系统
 
@@ -109,15 +111,15 @@ $ \sin{\frac{16\pi n}{5}}$ 的周期就是 5，而非 5/8.
 - 稳定性和因果性
   - 稳定性：当且仅当系统单位脉冲响应绝对可和，LTI 系统稳定。
   - 因果系统：（可实现）系统的输出只取决于历史输入。**LTI 系统若单位脉冲响应为单边，则为因果系统**
-    - 证明： $y(n) =  \sum_{k} x(k)h(n-k)$，若要满足因果条件，则$n \lt k$的分量必为 0。
+    - 证明： $$y(n) =  \sum_{k} x(k)h(n-k)$$，若要满足因果条件，则$$n \lt k$$的分量必为 0。
 - 差分方程
   - 画框图（**现在还不会画**）
   - MATLAB 中的`filter`函数。
 
 ### 系统频率响应和系统函数
 
-- 系统函数：$H(z) = \frac{Y(z)}{U(z)}$，$Y(z)$为系统的频率响应，$U(z)$为系统的输入函数。同时也是单位脉冲响应的 z 变换。
-- 系统频率响应：$H(e^{j\omega}) = \frac{Y(e^{j\omega})}{U(e^{j\omega})}$，$Y(e^{j\omega})$为系统的频率响应，$U(e^{j\omega})$为系统的输入函数。
+- 系统函数：$$H(z) = \frac{Y(z)}{U(z)}$$，$$Y(z)$$为系统的频率响应，$$U(z)$$为系统的输入函数。同时也是单位脉冲响应的 z 变换。
+- 系统频率响应：$$H(e^{j\omega}) = \frac{Y(e^{j\omega})}{U(e^{j\omega})}$$，$$Y(e^{j\omega})$$为系统的频率响应，$$U(e^{j\omega})$$为系统的输入函数。
   - 可以通过极零点和单位圆上的一圈点之间的距离估计频率响应。幅度比较好理解，相位则是这些向量角度的加加减减。想象一堆 ooxx 被拴在单位圆上。
 - 极零点分布的 MATLAB 实现：
   ```matlab
@@ -134,7 +136,7 @@ $ \sin{\frac{16\pi n}{5}}$ 的周期就是 5，而非 5/8.
 
 - 系统函数一般可以改写为：
 
-  $ H(z) = \frac{Y(z)}{U(z)} = \frac{\sum\_{k=0}^{M} a_k z^{-k}}{1+\sum\_{k=1}^{N} b_k z^{-k}} $
+  $$ H(z) = \frac{Y(z)}{U(z)} = \frac{\sum\_{k=0}^{M} a_k z^{-k}}{1+\sum\_{k=1}^{N} b_k z^{-k}} $$
 
-- FIR 滤波器：**任意一个 $b_k$ 都为 0，即没有极点。**
-- IIR 滤波器：**有一个$b_k$不为 0，即有极点。**此时需要构建**递归型**结构的系统，把输入信号反馈回去。
+- FIR 滤波器：**任意一个 $$b_k$$ 都为 0，即没有极点。**
+- IIR 滤波器：**有一个$$b_k$$不为 0，即有极点。**此时需要构建**递归型**结构的系统，把输入信号反馈回去。
