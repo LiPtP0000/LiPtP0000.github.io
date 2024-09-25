@@ -1,13 +1,14 @@
 ---
 layout: post
-title: Discrete Time Signals and Systems
+title: 离散时间信号与系统：Discrete Time Signals and Systems
 subtitle: DSP Chapter 1 Notes
 mathjax: true
 tags: [Digital Signal Processing, Signals and Systems]
 author: LiPtP
 ---
-This is the original note for the first chapter of the Southeast University Course "Digital Signal Processing". It mainly contains of the concept of discrete time signals and systems, signal DTFT and Z-transformation, system frequency response and system function and basic concepts of FIR/IIR filters.
-
+***
+离散时间信号可通过对连续信号的等间隔采样获得，通常用序列表示。常见的离散时间信号包括单位冲激、单位阶跃、矩形、实指数和复指数序列等。序列运算涉及加法、乘法、移位及能量计算，其中平方可和和绝对可和是重要的分类。离散时间信号的变换包括离散时间傅里叶变换（DTFT）和z变换，它们之间存在紧密关系，特别是在单位圆上的对应。离散时间系统（LTI系统）通过输入信号与单位脉冲响应的卷积生成输出，并需考虑稳定性和因果性。系统函数和频率响应是分析系统行为的关键，滤波器可分为FIR（无极点）和IIR（有极点）类型，前者是非递归结构，后者则涉及反馈机制。
+***
 ## 离散时间信号
 
 离散时间信号通常用**序列**表示。可以通过连续时间信号采样得到离散时间信号。
