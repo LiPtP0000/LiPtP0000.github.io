@@ -8,7 +8,7 @@ author: LiPtP
 ---
 
 {: .box-note}
-离散时间信号可通过对连续信号的等间隔采样获得，通常用序列表示。常见的离散时间信号包括单位冲激、单位阶跃、矩形、实指数和复指数序列等。序列运算涉及加法、乘法、移位及能量计算，其中平方可和和绝对可和是重要的分类。离散时间信号的变换包括离散时间傅里叶变换（DTFT）和z变换，它们之间存在紧密关系，特别是在单位圆上的对应。离散时间系统（LTI系统）通过输入信号与单位脉冲响应的卷积生成输出，并需考虑稳定性和因果性。系统函数和频率响应是分析系统行为的关键，滤波器可分为FIR（无极点）和IIR（有极点）类型，前者是非递归结构，后者则涉及反馈机制。
+Discrete-time signals can be obtained by sampling continuous signals at equal intervals, typically represented as sequences. Common discrete-time signals include the unit impulse, unit step, rectangular, real exponential, and complex exponential sequences. Sequence operations involve addition, multiplication, shifting, and energy calculations, with square summability and absolute summability being important classifications.<br\> Transformations of discrete-time signals include the Discrete-Time Fourier Transform (DTFT) and the z-transform, which have a close relationship, particularly in their correspondence on the unit circle. Discrete-time systems (LTI systems) generate outputs through the convolution of input signals with the unit impulse response, considering stability and causality. <br\>The system function and frequency response are key to analyzing system behavior, with filters categorized into FIR (no poles) and IIR (with poles) types; the former is a non-recursive structure, while the latter involves feedback mechanisms.
 
 ## 离散时间信号
 
