@@ -6,7 +6,7 @@ mathjax: true
 tags: [Digital Signal Processing, Signals and Systems]
 author: LiPtP
 ---
-
+This is the original note for the first chapter of the Southeast University Course "Digital Signal Processing". It mainly contains of the concept of discrete time signals and systems, signal DTFT and Z-transformation, system frequency response and system function and basic concepts of FIR/IIR filters.
 
 ## 离散时间信号
 
