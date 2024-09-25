@@ -1,3 +1,14 @@
+---
+layout: post
+title: 离散时间信号与系统
+subtitle: DSP 第一章笔记
+cover-img: /assets/img/path.jpg
+thumbnail-img: /assets/img/thumb.png
+share-img: /assets/img/path.jpg
+tags: [Digital Signal Processing, Signals and Systems]
+author: LiPtP
+---
+
 # 离散时间信号和系统
 
 ## 离散时间信号
