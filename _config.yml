@@ -53,6 +53,7 @@ social-network-links:
   rss: true # remove this line if you don't want to show an RSS link at the bottom
   # facebook: deanattali
   github: LiPtP0000
+  bilibili: 495687826
   # twitter: daattali
   # patreon: DeanAttali
   # youtube: "@daattali"
@@ -99,7 +100,7 @@ share-links-active:
 
 # How to display the link to your website in the footer
 # Remove this if you don't want a link in the footer
-url-pretty: "MyWebsite.com"
+url-pretty: "My Blogs"
 
 # Add the website title to the title of every page
 title-on-all-pages: true
