@@ -161,13 +161,13 @@ $$G(e^{j\omega}) = \frac{1}{2}\left[e^{-j\omega 2n}X(e^{\frac{j\omega}{2}})+e^{j
 where $$X(e^{j\omega})$$ is the DTFT of $$x(n)$$.
 
 - 对于如下的信号序列，求其 z 变换。
-
   $$
-  x(n)=\left\{\begin{aligned}
-  & n \quad & 0\leq n \leq N \\
-  & 2N-n \quad & N+1\leq n \leq 2N \\
-  & 0 \quad & \text{otherwise}
-  \end{aligned}\right.
+    x(n) =
+  \begin{cases}
+      n & 0\leq n\leq N-1 \\
+      2N-n & N+1\leq n\leq 2N\\
+      0 & \text{otherwise}
+  \end{cases}
   $$
 
 {: .box-note}
