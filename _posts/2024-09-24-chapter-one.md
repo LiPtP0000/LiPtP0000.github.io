@@ -114,7 +114,10 @@ $$ \sin{\frac{16\pi n}{5}}$$ 的周期就是 5，而非 5/8.
 - 稳定性和因果性
   - 稳定性：当且仅当系统单位脉冲响应绝对可和，LTI 系统稳定。
   - 因果系统：（可实现）系统的输出只取决于历史输入。**LTI 系统若单位脉冲响应为单边，则为因果系统**
-    - 证明： $$y(n) =  \sum_{k} x(k)h(n-k)$$，若要满足因果条件，则$$n \lt k$$的分量必为 0。
+
+{: .box-success}
+证明： $$y(n) =  \sum_{k} x(k)h(n-k)$$，若要满足因果条件，则$$n \lt k$$的分量必为 0。
+
 - 差分方程
   - 画框图（**现在还不会画**）
   - MATLAB 中的`filter`函数。
@@ -148,7 +151,7 @@ $$ \sin{\frac{16\pi n}{5}}$$ 的周期就是 5，而非 5/8.
 
 ## 部分习题整理
 
-1. $$g(n) = x(2n)$$，求 $$g(n)$$ 的 DTFT。
+- $$g(n) = x(2n)$$，求 $$g(n)$$ 的 DTFT。
 
 {: .box-note}
 **Solution**<br/>
@@ -157,15 +160,15 @@ $$G(e^{j\omega}) = \frac{1}{2}\left[e^{-j\omega 2n}X(e^{\frac{j\omega}{2}})+e^{j
 <br/>
 where $$X(e^{j\omega})$$ is the DTFT of $$x(n)$$.
 
-2. 对于如下的信号序列，求其 z 变换。
+- 对于如下的信号序列，求其 z 变换。
 
-   $$
-   x(n)=\left\{\begin{aligned}
-   & n \quad & 0\leq n \leq N \\
-   & 2N-n \quad & N+1\leq n \leq 2N \\
-   & 0 \quad & \text{otherwise}
-   \end{aligned}\right.
-   $$
+  $$
+  x(n)=\left\{\begin{aligned}
+  & n \quad & 0\leq n \leq N \\
+  & 2N-n \quad & N+1\leq n \leq 2N \\
+  & 0 \quad & \text{otherwise}
+  \end{aligned}\right.
+  $$
 
 {: .box-note}
 **Solution**<br/>
