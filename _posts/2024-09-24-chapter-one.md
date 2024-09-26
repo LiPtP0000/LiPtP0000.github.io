@@ -26,6 +26,7 @@ author: LiPtP
 - 复指数序列: $$x(n) = r^n e^{j \omega_0 n}$$
 - 正弦序列： $$x(n) = \sin(\omega_0 n)$$
 
+{: .box-warning}
 离散周期序列中，周期必定是整数周期。例如：
 $$ \sin{\frac{16\pi n}{5}}$$ 的周期就是 5，而非 5/8.
 
@@ -150,6 +151,7 @@ $$ \sin{\frac{16\pi n}{5}}$$ 的周期就是 5，而非 5/8.
 1. $$g(n) = x(2n)$$，求 $$g(n)$$ 的 DTFT。
 
 {: .box-note}
-** Let $g(n) = \frac{1}{2}(x(2n)+(-1)^n x(2n))**,then the DTFT of $g(n)$ is:
+**Solution**<
+**Let $$g(n) = \frac{1}{2}(x(2n)+(-1)^n x(2n))$$**,then the DTFT of $$g(n)$$ is:
 $$G(e^{j\omega}) = \frac{1}{2}\left[e^{-j\omega 2n}X(e^{j\omega})+e^{j\omega 2n}X(e^{-j\omega}) \right]$$
-where $X(e^{j\omega})$ is the DTFT of $x(n)$.
+where $$X(e^{j\omega})$$ is the DTFT of $$x(n)$$.
