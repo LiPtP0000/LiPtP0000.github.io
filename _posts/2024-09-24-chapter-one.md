@@ -158,28 +158,30 @@ $$G(e^{j\omega}) = \frac{1}{2}\left[e^{-j\omega 2n}X(e^{j\omega})+e^{j\omega 2n}
 where $$X(e^{j\omega})$$ is the DTFT of $$x(n)$$.
 
 2. 对于如下的信号序列，求其 z 变换。
+
    $$
    x(n)=\left\{\begin{aligned}
-   n & 0\leq n \leq N \\
-   2N-n & N+1\leq n \leq 2N \\
-   0 & \text{otherwise}
+   n \quad & 0\leq n \leq N \\
+   2N-n \quad & N+1\leq n \leq 2N \\
+   0 \quad & \text{otherwise}
    \end{aligned}\right.
    $$
 
 {: .box-note}
 **Solution**<br/>
-Let $$R_N(n) be the sequence defined by
+Let $$R_N(n) be the sequence defined by:
 
-$$
-R_N(n) = \left\{\begin{aligned}
+<p>
+$$R_N(n) = \left\{\begin{aligned}
 n & 0\leq n \leq N-1 \\
 0 & otherwise
-\end{aligned}\right.
-$$
-
+\end{aligned}\right.$$
+</p>
 <br/>
 Then x(n) can be written as:<br/>
+<p>
 $$
 x(n+1) = R_N(n)\*R_N(n)
-$$<br/>
+$$
+</p><br/>
 Then we can use the convolution theorem to get the z-transform of $$x(n)$$(which is a convolution of two sequences).Note that $$\mathscr{Z}(x(n+1)) = zX(z)$$(where $$X(z)$$ is the z-transform of $$x(n)$$).<br/>
