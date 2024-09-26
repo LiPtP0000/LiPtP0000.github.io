@@ -153,7 +153,7 @@ $$ \sin{\frac{16\pi n}{5}}$$ 的周期就是 5，而非 5/8.
 {: .box-note}
 **Solution**<br/>
 **Let $$g(n) = \frac{1}{2}(x(2n)+(-1)^n x(2n))$$**,then the DTFT of $$g(n)$$ is:<br/>
-$$G(e^{j\omega}) = \frac{1}{2}\left[e^{-j\omega 2n}X(e^{\frac{j\omega}{2}})+e^{j\omega 2n}X(e^{\frac{-j\omega}}{2}) \right]$$
+$$G(e^{j\omega}) = \frac{1}{2}\left[e^{-j\omega 2n}X(e^{\frac{j\omega}{2}})+e^{j\omega 2n}X(e^{\frac{-j\omega}{2}}) \right]$$
 <br/>
 where $$X(e^{j\omega})$$ is the DTFT of $$x(n)$$.
 
@@ -176,7 +176,7 @@ R_N(n) = \left\{\begin{aligned}
 \end{aligned}\right.$$<br/>
 Then x(n) can be written as:<br/>$$
 x(n+1) = R_N(n) \circledast R_N(n)$$<br/>
-Then we can use the convolution theorem to get the z-transform of $$x(n)$$(which is a convolution of two sequences).Note that $$\mathscr{Z}(x(n+1)) = zX(z)$$(where $$X(z)$$ is the z-transform of $$x(n)$$).<br/>
+Then we can use the convolution theorem to get the z-transform of $$x(n)$$(which is a convolution of two sequences).Note that $$\mathscr{Z}(x(n+1)) = zX(z)$$,where $$X(z)$$ is the z-transform of $$x(n)$$.<br/>
 
 $$
 $$
