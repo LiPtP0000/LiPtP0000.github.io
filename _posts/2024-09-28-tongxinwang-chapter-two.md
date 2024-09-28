@@ -14,3 +14,9 @@ mathjax: true
 This is a note for the Southeast University course *"Communication Networks and Technologies"* taught by Prof. Wang. In this post I will mark down the basic concepts of the communication network, multiplexing techniques and channel coding.
 
 # 别急
+
+
+-----------
+
+{: .box-note}
+Title Background Source: [アスター](https://www.pixiv.net/artworks/112776803)<br/>This one is **AWESOME**! I love it!
