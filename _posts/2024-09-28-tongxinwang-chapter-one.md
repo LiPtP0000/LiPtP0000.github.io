@@ -3,9 +3,9 @@ layout: post
 title: 通信网原理与技术学习笔记（一）
 subtitle: Overview of the course and key points of Chapter 1
 tag: [Communication Networks]
-# cover-img: /assets/img/miku.jpg
-# share-img: /assets/img/miku.jpg
-# thumbnail-img: /assets/img/miku.jpg
+cover-img: /assets/img/melty.jpg
+share-img: /assets/img/melty.jpg
+thumbnail-img: /assets/img/melty.jpg
 author: LiPtP
 mathjax: true
 ---
@@ -43,3 +43,7 @@ Let's move on to practical things, the history of communication networks. There 
 3. Radio and Television Networks: *Open Circuit Broadcasting (OCB)*
 4. Wireless and Mobile Networks
 
+--------
+
+{:.box-note}
+Title Background Source: [メルティランドナイトメア](https://www.pixiv.net/artworks/117304672)
