@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 通信网原理与技术学习笔记（二）
-subtitle: Key points of Chapter 2, with some additional notes for multiplexing.
+subtitle: My Lover, and Death, "Pink Kiss" in my Heart.
 tag: [Communication Networks]
 cover-img: /assets/img/aster.jpg
 share-img: /assets/img/aster.jpg

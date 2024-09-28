@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 通信网原理与技术学习笔记（一）
-subtitle: Overview of the course and key points of Chapter 1
+subtitle: Welcome to the Melty Land!
 tag: [Communication Networks]
 cover-img: /assets/img/melty.jpg
 share-img: /assets/img/melty.jpg
@@ -46,4 +46,4 @@ Let's move on to practical things, the history of communication networks. There 
 --------
 
 {:.box-note}
-Title Background Source: [メルティランドナイトメア](https://www.pixiv.net/artworks/117304672)<br/>Such a pity that the picture is not fully displayed on the website!
+Title Background Source: [メルティランドナイトメア](https://www.pixiv.net/artworks/117304672)<br/>"It all ends with you."
