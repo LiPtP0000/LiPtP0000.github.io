@@ -34,7 +34,7 @@ The whole manuscript of the course is divided into 10 chapters, which is organiz
 The course has **a huge amount of content** compared to other similiar courses. Furthermore, the professor tend to teach some advanced techniques not only in the *Communication Networks and Technologies* course but also in other courses. Therefore, it is important to **pay attention to the course syllabus** and **read the textbook** thoroughly.
 
 # *Chapter 1: Overview*
-This chapter provides an overview of the course and some big ideas of communication networks. So it's better to skip them for reviewing.
+This chapter provides an overview of the course and some big ideas of communication networks. So it's better skipping them for reviewing.
 
 Let's move on to practical things, the history of communication networks. There are **four main stages** listed below, with their main features:
 
@@ -46,4 +46,4 @@ Let's move on to practical things, the history of communication networks. There 
 --------
 
 {:.box-note}
-Title Background Source: [メルティランドナイトメア](https://www.pixiv.net/artworks/117304672)
+Title Background Source: [メルティランドナイトメア](https://www.pixiv.net/artworks/117304672)<br/>Such a pity that the picture is not fully displayed on the website!
