@@ -22,11 +22,14 @@ There are  **four main parts** of the communication network:
 
 Now let's go through each part in detail.
 ## Terminal
+
+{: .box-note}
 Terminal is the *end point* of the communication network. For example, a cell phone, a computer, a printer, etc. are all terminals.
 
 In the terminal, there are two main **services**:
-1. Information Service
-2. Network Service
+1. Information Service (Terminal Service): Provided on the terminal, such as text messaging, email, voice messaging, etc. It is based on the **Network Service** (Bearer Service) provided by the network.
+
+2. Network Service (Bearer Service): Data transfer from one place to another provided by *the network*, usually via UNI (User Network Interface).
 
 -----------
 
