@@ -13,8 +13,20 @@ mathjax: true
 {: .box-note}
 This is a note for the Southeast University course *"Communication Networks and Technologies"* taught by Prof. Wang. In this post I will mark down the basic concepts of the communication network, multiplexing techniques and channel coding.
 
-# 别急
+# Overview of the Communication Network Principles
+There are  **four main parts** of the communication network:
+1. Terminal
+2. Transmission (Channel coding, Multiplexing, etc.)
+3. Switching
+4. Protocol
 
+Now let's go through each part in detail.
+## Terminal
+Terminal is the *end point* of the communication network. For example, a cell phone, a computer, a printer, etc. are all terminals.
+
+In the terminal, there are two main **services**:
+1. Information Service
+2. Network Service
 
 -----------
 
