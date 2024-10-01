@@ -13,6 +13,8 @@ mathjax: true
 {: .box-note}
 This is a note for the Southeast University course *"Communication Networks and Technologies"* taught by Prof. Wang. In this post I will mark down the basic concepts of the communication network, multiplexing techniques and channel coding.
 
+--------------------
+
 # Overview of the Communication Network Principles
 There are  **four main parts** of the communication network:
 1. Terminal
@@ -31,6 +33,49 @@ In the terminal, there are two main **services**:
 
 2. Network Service (Bearer Service): Data transfer from one place to another provided by *the network*, usually via UNI (User Network Interface).
 
+## Transmission
+
+{: .box-note}
+Transmission is the process of sending and receiving data through the communication network.
+
+This process involves a service called **Communication Service**, which is highly dependent on the **Multiplexing** and **Channel Coding** techniques to achieve high data rate and low error rate.
+
+First, let's introduce the **Multiplexing** technique. The goal for this technique is: *Multi-user, multi-service transmitted in one line efficiently.* There are six main multiplexing techniques:
+1. Frequency-Division Multiplexing (FDM): 技术简单，但每一路信道都要有独立的调制解调设备，且每个子信道分配灵活性差。
+
+2. Time-Division Multiplexing (TDM): 抽样定理，数字化基础。位同步，帧同步，要求时钟同步。**是一种同步时分复用技术**。
+
+3. Code Division Multiplexing (CDM): 利用一个码元表示各个数字链路的信号，在接收机上解码，分到各个信道去。
+
+4. Statistical Division Multiplexing (SDM): 随机分配时隙给每一个信道。相当于**异步时分复用**。开销则是需要**位同步**，**块同步**。
+
+5. Wave Division Multiplexing (WDM): 使用不同波长的光传输数据。
+
+6. Multiple Access (MA): 即多个用户不一定在同一位置向信道传输数据。可以集成上面的五种复用方式。
+
+## Switching
+
+{: .box-note}
+Swithching is an unbreakable part of the communication network. *It is the main difference between a communication system and a communication network.*
+
+Here are the three main ***connection methods***.
+<br/>
+![Main Connecting Methods](/assets/img/Tongxinwang-images/connection-switching.png){: .mx-auto.d-block :}
+<br/>
+
+Here are the table for the ***main switching technologies***:
+<br/>
+![Main Switching Technologies](/assets/img/Tongxinwang-images/methods-switching.png){: .mx-auto.d-block :}
+<br/>
+
+### Main Switching Methods
+There are three main switching methods, with the latter two can be combined as "Store and Forward".
+
+1. Circuit Switching: 电路交换，利用电路连接各个节点。
+
+2. Packet Switching: 数据包交换，利用数据包连接各个节点。
+
+3. Message Switching: 消息交换，利用消息传递连接各个节点。
 -----------
 
 {: .box-note}
