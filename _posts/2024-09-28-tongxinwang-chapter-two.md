@@ -75,17 +75,35 @@ There are three main switching methods, with the latter two can be combined as "
 There are two main circuit switching methods: ***Space-division Circuit Switching*** and ***Time-division Circuit Switching***. For the former, communication lines are connected according to their locations in physical space, that is, **each connection is connected using a different physical line, and this line is maintained from the beginning of information exchange to the end.** And for the latter, it is only implemented in TDM systems, and realize the switching function by **exchanging the time slots** of the communication lines.
 
 Circuit switching has pros and cons.
+
 The pros are:
 - fixed delay
 - continuous data transfer
+
 The cons are:
 - Requires a setup to establish the connection
 - Data rate needs to be fixed
 - unused when idle
-### Packet Switching
 
 ### Message Switching
 
+{: .box-note}
+Different from circuit switching, both packet switching and message switching are not based on a real circuit, or called a *physical path*.
+
+Suppose a message is transmitted from host A to host B. The **message switching** method transmitt the message through *nodes* among the hosts to achieve the switching process. However, as the message length is uncertain, it is hard to control delay and registers. Therefore, it is not suitable for real-time applications.
+
+### Packet Switching
+It divides the message into a series of **packets**, and uses pipelining to speed up the switching process. There are 2 categories according to service provided by communication sub-network:
+1. Datagram Switching: Each packet is transmitted independently, and the receiver needs to reassemble the packets to get the original message.
+
+2. Virtual Circuit Switching: All packets associated with a session follow the same path, and the route is predetermined.
+
+{: .box-warning}
+Why call it "Virtual Circuit Switching"? Because they are just "logically connected" in the network, but not physically connected. Every node can have connections to multiple nodes.
+
+***Lots of things to add...***
+
+## Protocol
 -----------
 
 {: .box-note}
