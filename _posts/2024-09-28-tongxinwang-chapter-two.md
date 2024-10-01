@@ -63,19 +63,29 @@ Here are the three main ***connection methods***.
 ![Main Connecting Methods](/assets/img/Tongxinwang-images/connection-switching.png){: .mx-auto.d-block :}
 <br/>
 
-Here are the table for the ***main switching technologies***:
+
+
+### Main Switching Methods
+There are three main switching methods, with the latter two can be combined as "Store and Forward" (存储转发). Note that the *Multiple Access* technique can also be used in the switching process. Here are the table for the ***main switching technologies***:
 <br/>
 ![Main Switching Technologies](/assets/img/Tongxinwang-images/methods-switching.png){: .mx-auto.d-block :}
 <br/>
 
-### Main Switching Methods
-There are three main switching methods, with the latter two can be combined as "Store and Forward".
+### Circuit Switching
+There are two main circuit switching methods: ***Space-division Circuit Switching*** and ***Time-division Circuit Switching***. For the former, communication lines are connected according to their locations in physical space, that is, **each connection is connected using a different physical line, and this line is maintained from the beginning of information exchange to the end.** And for the latter, it is only implemented in TDM systems, and realize the switching function by **exchanging the time slots** of the communication lines.
 
-1. Circuit Switching: 电路交换，利用电路连接各个节点。
+Circuit switching has pros and cons.
+The pros are:
+- fixed delay
+- continuous data transfer
+The cons are:
+- Requires a setup to establish the connection
+- Data rate needs to be fixed
+- unused when idle
+### Packet Switching
 
-2. Packet Switching: 数据包交换，利用数据包连接各个节点。
+### Message Switching
 
-3. Message Switching: 消息交换，利用消息传递连接各个节点。
 -----------
 
 {: .box-note}
