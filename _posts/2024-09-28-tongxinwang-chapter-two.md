@@ -104,15 +104,23 @@ Why call it "Virtual Circuit Switching"? Because they are just "logically connec
 ***Lots of things to add...***
 
 ## Protocol
+It's a must to establish a system to communicate and organize all hardware devices within the network.
+In telephone networks, the system is called "Signaling", while in data networks, it is called "Network Protocol". To make them interconnected, **standard** is also required. Typical standards include:
+
+- ITU-T (International Telecommunication Union Telecommunication Standardization Sector) 
+- IEEE (Institute of Electrical and Electronics Engineers) 
+- ISO (International Organization for Standardization)
+- EIA (Electronic Industries Association) 
+
 
 ## HDLC Protocol
 
 ## OSI-RM Model
 
-Layer | Name | Function
-: --- :|: --- :|: --- :
-7 | Application | Provides application-specific services, such as email, file transfer, etc.
-6 | Presentation | Transforms data between a user and the application, such as encryption, data compression, etc.   
+Layer | Name | Function |
+: --- :|: --- :|: --- :  
+7 | Application | Provides application-specific services, such as **HTTP Service**, **FTP Service**, etc.
+6 | Presentation | Translate, encrypt and compress data.   
 5 | Session | Establishes, manages, and terminates sessions, such as logon, logoff, etc.
 4 | Transport | Provides end-to-end communication, such as reliable data transfer, flow control, etc.
 3 | Network | Provides network-specific services, such as routing, addressing, etc.
