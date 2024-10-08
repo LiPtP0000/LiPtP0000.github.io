@@ -104,6 +104,26 @@ Why call it "Virtual Circuit Switching"? Because they are just "logically connec
 ***Lots of things to add...***
 
 ## Protocol
+
+## HDLC Protocol
+
+## OSI-RM Model
+
+Layer | Name | Function
+: --- :|: --- :|: --- :
+7 | Application | Provides application-specific services, such as email, file transfer, etc.
+6 | Presentation | Transforms data between a user and the application, such as encryption, data compression, etc.   
+5 | Session | Establishes, manages, and terminates sessions, such as logon, logoff, etc.
+4 | Transport | Provides end-to-end communication, such as reliable data transfer, flow control, etc.
+3 | Network | Provides network-specific services, such as routing, addressing, etc.
+2 | Data Link | Provides data link-specific services, such as error detection and correction, flow control, etc.
+1 | Physical | Provides physical-layer services, such as transmission of raw bits over a physical medium, such as copper or fiber optics.
+
+## TCP/IP Model
+
+Layer | Name | Function
+--- | --- | ---
+4 | Transport | Provides end-to-end communication, such as reliable data transfer, flow control, etc.
 -----------
 
 {: .box-note}
