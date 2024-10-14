@@ -112,8 +112,19 @@ In telephone networks, the system is called "Signaling", while in data networks,
 - ISO (International Organization for Standardization)
 - EIA (Electronic Industries Association) 
 
+### Data Communication Protocol
 
-## HDLC Protocol
+#### Error Control: Frame Error Issues
+Here are the main error control techniques:
+1. Forward Error Correction (FEC): It is a type of redundancy technique that detects and corrects errors in data, such as LDPC codes, Hamming codes, etc.
+
+2. Automatic Repeat Request (ARQ): It is a type of error control technique that retransmits lost or corrupted data segments. It is often used in **scenarios where no strict real-time communication is required.**
+
+3.
+#### Flow Control: Speed lssues
+
+#### Congestion Control: Global Issues
+#### HDLC (High-Level Data Link Control) Protocol
 
 ## OSI-RM Model
 
@@ -127,12 +138,9 @@ Layer | Name | Function |
 2 | Data Link | Provides data link-specific services, such as error detection and correction, flow control, etc.
 1 | Physical | Provides physical-layer services, such as transmission of raw bits over a physical medium, such as copper or fiber optics.
 
-## TCP/IP Model
 
-Layer | Name | Function
---- | --- | ---
-4 | Transport | Provides end-to-end communication, such as reliable data transfer, flow control, etc.
+
 -----------
 
 {: .box-note}
-Title Background Source: [アスター](https://www.pixiv.net/artworks/112776803)<br/>This one is **AWESOME**! I love it!
+Title Background Source: [アスター](https://www.pixiv.net/artworks/122776803)<br/>This one is **AWESOME**! I love it!
