@@ -13,10 +13,11 @@ We have already discussed about **discrete time signals** in chapter one. Howeve
 ## Flowchart for DSP
 老生常谈：采样、保持、量化、编码。
 <br/>
-    ![DSP flowchart](/assets/img/DSP/dsp_flow.pdf){: .mx-auto.d-block :}
+    ![DSP flowchart](/assets/img/DSP/dsp_flow.png){: .mx-auto.d-block :}
     <br/>
-## Sampling and Rebuilding of Analog Signals
 
+## Sampling and Rebuilding of Analog Signals
+讨论这个概念以前，我们先不讨论这个概念了，睡觉！
 
 ## Analog LPFs in Sampling and Rebuilding
 主要了解两种滤波器：
