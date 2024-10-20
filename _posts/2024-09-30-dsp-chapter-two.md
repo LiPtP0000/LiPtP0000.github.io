@@ -8,7 +8,7 @@ author: LiPtP
 ---
 
 {: .box-note}
-We have already discussed about **discrete time signals** in chapter one. However, they are generally originated from analog signals. In this chapter, we will first introduce the councept of **sampling** and **rebuilding** of analog signals, and then discuss about the **Nyquist frequency** and **aliasing**. Finally, we will learn about the filters and the concepts of **undersampling** and **oversampling**.
+这一章是在DSP整体框架下，讨论Nyquist采样定理，**欠采样**、**升采样**的引入以及整数M倍抽取和L倍内插的采样方法。要求会画信号抽取前后的频谱，并掌握分析信号是否混叠的办法。
 
 ## Flowchart for DSP
 老生常谈：采样、保持、量化、编码。
