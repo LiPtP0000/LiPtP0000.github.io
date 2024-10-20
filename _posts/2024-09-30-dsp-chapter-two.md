@@ -11,12 +11,15 @@ author: LiPtP
 We have already discussed about **discrete time signals** in chapter one. However, they are generally originated from analog signals. In this chapter, we will first introduce the councept of **sampling** and **rebuilding** of analog signals, and then discuss about the **Nyquist frequency** and **aliasing**. Finally, we will learn about the filters and the concepts of **undersampling** and **oversampling**.
 
 ## Flowchart for DSP
-
+老生常谈：采样、保持、量化、编码。
+<br/>
+    ![DSP flowchart](/assets/img/DSP/dsp_flow.pdf){: .mx-auto.d-block :}
+    <br/>
 ## Sampling and Rebuilding of Analog Signals
 
 
 ## Analog LPFs in Sampling and Rebuilding
-There are two main LPFs in sampling and rebuilding of analog signals:
+主要了解两种滤波器：
 1. 抗混叠滤波器
 2. 平滑滤波器
 
