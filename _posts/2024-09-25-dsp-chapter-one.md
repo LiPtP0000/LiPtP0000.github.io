@@ -146,7 +146,7 @@ $$ \sin{\frac{16\pi n}{5}}$$ 的周期就是 5，而非 5/8.
 
 - 系统函数一般可以改写为：
 
-  $$ H(z) = \frac{Y(z)}{U(z)} = \frac{\sum*{k=0}^{M} a_k z^{-k}}{1+\sum*{k=1}^{N} b_k z^{-k}} $$
+  $$ H(z) = \frac{Y(z)}{U(z)} = \frac{\sum_{k=0}^{M} a_k z^{-k}}{1+\sum_{k=1}^{N} b_k z^{-k}} $$
 
 - FIR 滤波器：**任意一个 $$b_k$$ 都为 0，即没有极点。**
 - IIR 滤波器：**有一个$$b_k$$不为 0，即有极点。**此时需要构建**递归型**结构的系统，把输入信号反馈回去。
@@ -182,7 +182,10 @@ R_N(n) = \left\{\begin{aligned}
 \end{aligned}\right.$$<br/>
 Then x(n) can be written as:<br/>$$
 x(n+1) = R_N(n) \circledast R_N(n)$$<br/>
-Then we can use the convolution theorem to get the z-transform of $$x(n)$$(which is a convolution of two sequences).Note that $$\mathscr{Z}(x(n+1)) = zX(z)$$,where $$X(z)$$ is the z-transform of $$x(n)$$.<br/>
+Then we can use the convolution theorem to get the z-transform of $$x(n)$$(which is a convolution of two sequences). Note that $$\mathscr{Z}(x(n+1)) = zX(z)$$,where $$X(z)$$ is the z-transform of $$x(n)$$.<br/>
 
-$$
-$$
+- $$y(n+1) = 2x(n) + 3$$，该系统是否为线性时不变系统？
+
+{: .box-note}
+**Solution**<br/>
+This is a non linear time invariant system. For example:$$2y(n+1) = 2(2x(n)) + 3 = 4x(n) + 6 \neq 4x(n) + 3$$, which is not a linear time invariant system.
