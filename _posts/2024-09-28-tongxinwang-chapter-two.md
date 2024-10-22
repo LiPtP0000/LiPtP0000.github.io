@@ -153,7 +153,7 @@ Frame Structure description on Zhihu: [HDLC Protocol](https://zhuanlan.zhihu.com
 **O**pen **S**ystem **I**nterconnection **R**eference **M**odel
 
 <br/>
-![Sliding Window Flow Control](/assets/img/Tongxinwang-images/sliding-window.png){: .mx-auto.d-block :}
+![OSI-RM Model](/assets/img/Tongxinwang-images/osi.png){: .mx-auto.d-block :}
 <br/>
 
 ***Vertically*** A layer provides a service to the one above, while ***horizontally*** talks to its peer using a *protocol*.
