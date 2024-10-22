@@ -120,11 +120,24 @@ In telephone networks, the system is called "Signaling", while in data networks,
 Here are the main error control techniques:
 1. Forward Error Correction (FEC, 前向纠错): It is a type of redundancy technique that detects and corrects errors in data, such as LDPC codes, Hamming codes, etc.
 
-2. Automatic Repeat Request (ARQ, 自动请求重传): It is a type of error control technique that retransmits lost or corrupted data segments. It is often used in **scenarios where no strict real-time communication is required.**[Typical ARQ Protocols](https://zhuanlan.zhihu.com/p/261152357)
+2. **A**utomatic **R**epeat Re**Q**uest (ARQ, 自动请求重传): It is a type of error control technique that retransmits lost or corrupted data segments. It is often used in **scenarios where no strict real-time communication is required.** Typical ARQ Protocols are: *ABP(Pure Stop and wait), Go Back N and SRP*. [Introduction](https://zhuanlan.zhihu.com/p/261152357)
 
 3. Hybrid Error Correction (HEC, 混合纠错): It is a combination of FEC and ARQ, where FEC is used for detecting and correcting errors, and ARQ is used for retransmitting lost or corrupted data segments.
 
 #### Flow Control: Speed lssues
+
+[Flow Control in Data link Layer](https://www.geeksforgeeks.org/flow-control-in-data-link-layer/)
+
+{: .box-warning}
+***Mostly, in real life, the Data-Link Layer has no flow control, and all flow control is handled in the Transport Layer. For example, there is an ethernet flow control, but it is often not implemented, and it is poorly supported. It is an afterthought that was bolted onto ethernet. ***
+
+Flow control has two basic algorithms:
+1. Stop and Wait - This flow control mechanism forces the sender after transmitting a data frame to **stop and wait until the acknowledgement of the data-frame sent is received.**
+2. Sliding Window - In this flow control mechanism, both sender and receiver agree on the number of data-frames after which the acknowledgement should be sent. As we learnt, stop and wait flow control mechanism wastes resources, this protocol tries to make use of underlying resources as much as possible.
+
+<br/>
+![Sliding Window Flow Control](/assets/img/Tongxinwang-images/sliding-window.png){: .mx-auto.d-block :}
+<br/>
 
 #### Congestion Control: Global Issues
 
@@ -151,7 +164,7 @@ Layer | Name | Function |
 2 | Data Link | Provides data link-specific services, such as error detection and correction, flow control, etc.
 1 | Physical | Provides physical-layer services, such as transmission of raw bits over a physical medium, such as copper or fiber optics.
 
-Here's a link for reference:[Protocol Layers and Service Model](https://blog.csdn.net/m0_52025973/article/details/115674167)
+Here's a link for reference: [Protocol Layers and Service Model](https://blog.csdn.net/m0_52025973/article/details/115674167)
 
 -----------
 
