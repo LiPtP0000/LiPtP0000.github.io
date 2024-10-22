@@ -124,7 +124,7 @@ Here are the main error control techniques:
 
 3. Hybrid Error Correction (HEC, 混合纠错): It is a combination of FEC and ARQ, where FEC is used for detecting and correcting errors, and ARQ is used for retransmitting lost or corrupted data segments.
 
-#### Flow Control: Speed lssues
+#### Flow Control: Speed lssue
 
 [Flow Control in Data link Layer](https://www.geeksforgeeks.org/flow-control-in-data-link-layer/)
 
@@ -139,8 +139,8 @@ Flow control has two basic algorithms:
 ![Sliding Window Flow Control](/assets/img/Tongxinwang-images/sliding-window.png){: .mx-auto.d-block :}
 <br/>
 
-#### Congestion Control: Global Issues
-
+#### Congestion Control: Global Issue
+We may use similiar techniques as flow control to solve the congestion control issue.
 #### HDLC (High-Level Data Link Control, 高级数据链路控制) Protocol
 It is a bit-oriented **data link** protocol.
 
@@ -151,6 +151,10 @@ Frame Structure description on Zhihu: [HDLC Protocol](https://zhuanlan.zhihu.com
 
 {: .box-note}
 **O**pen **S**ystem **I**nterconnection **R**eference **M**odel
+
+<br/>
+![Sliding Window Flow Control](/assets/img/Tongxinwang-images/sliding-window.png){: .mx-auto.d-block :}
+<br/>
 
 ***Vertically*** A layer provides a service to the one above, while ***horizontally*** talks to its peer using a *protocol*.
 
