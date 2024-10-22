@@ -120,7 +120,7 @@ In telephone networks, the system is called "Signaling", while in data networks,
 Here are the main error control techniques:
 1. Forward Error Correction (FEC, 前向纠错): It is a type of redundancy technique that detects and corrects errors in data, such as LDPC codes, Hamming codes, etc.
 
-2. **A**utomatic **R**epeat Re**Q**uest (ARQ, 自动请求重传): It is a type of error control technique that retransmits lost or corrupted data segments. It is often used in **scenarios where no strict real-time communication is required.** Typical ARQ Protocols are: *ABP(Pure Stop and wait), Go Back N and SRP*. [Introduction](https://zhuanlan.zhihu.com/p/261152357)
+2. **A**utomatic **R**epeat Re**Q**uest (ARQ, 自动请求重传): It is a type of error control technique that retransmits lost or corrupted data segments. It is often used in **scenarios where no strict real-time communication is required.** Typical ARQ Protocols are: *ABP(Pure Stop and wait), [Go Back N](https://blog.csdn.net/qq_45778676/article/details/116099353) and SRP*. [Overview of ARQ protocols](https://zhuanlan.zhihu.com/p/261152357)
 
 3. Hybrid Error Correction (HEC, 混合纠错): It is a combination of FEC and ARQ, where FEC is used for detecting and correcting errors, and ARQ is used for retransmitting lost or corrupted data segments.
 
@@ -129,7 +129,7 @@ Here are the main error control techniques:
 [Flow Control in Data link Layer](https://www.geeksforgeeks.org/flow-control-in-data-link-layer/)
 
 {: .box-warning}
-***Mostly, in real life, the Data-Link Layer has no flow control, and all flow control is handled in the Transport Layer. For example, there is an ethernet flow control, but it is often not implemented, and it is poorly supported. It is an afterthought that was bolted onto ethernet. ***
+*Mostly, in real life, the Data-Link Layer has no flow control, and all flow control is handled in the Transport Layer. For example, there is an ethernet flow control, but it is often not implemented, and it is poorly supported. It is an afterthought that was bolted onto ethernet.*
 
 Flow control has two basic algorithms:
 1. Stop and Wait - This flow control mechanism forces the sender after transmitting a data frame to **stop and wait until the acknowledgement of the data-frame sent is received.**
