@@ -160,13 +160,13 @@ Frame Structure description on Zhihu: [HDLC Protocol](https://zhuanlan.zhihu.com
 
 Layer | Name | Function |
 : --- :|: --- :|: --- :  
-7 | Application | Provides application-specific services, such as **HTTP Service**, **FTP Service**, etc.
-6 | Presentation | Translate, encrypt and compress data.   
-5 | Session | Establishes, manages, and terminates sessions, such as logon, logoff, etc.
-4 | Transport | Provides end-to-end communication, such as reliable data transfer, flow control, etc.
-3 | Network | Provides network-specific services, such as routing, addressing, etc.
-2 | Data Link | Provides data link-specific services, such as error detection and correction, flow control, etc.
-1 | Physical | Provides physical-layer services, such as transmission of raw bits over a physical medium, such as copper or fiber optics.
+7 | Application | 为应用程序或用户请求提供各种请求服务。
+6 | Presentation | 数据编码、格式转换、数据加密。   
+5 | Session | 创建、管理和维护会话。
+4 | Transport | 数据通信（End to End）、流控制、差错控制。
+3 | Network | IP选址和路由选择。
+2 | Data Link | 提供介质访问和链路管理。
+1 | Physical | 管理通信设备和网络媒体之间的互联互通。
 
 Here's a link for reference: [Protocol Layers and Service Model](https://blog.csdn.net/m0_52025973/article/details/115674167)
 
