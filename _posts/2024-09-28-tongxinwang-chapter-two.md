@@ -124,7 +124,12 @@ Here are the main error control techniques:
 #### Flow Control: Speed lssues
 
 #### Congestion Control: Global Issues
-#### HDLC (High-Level Data Link Control) Protocol
+
+#### HDLC (High-Level Data Link Control, 高级数据链路控制) Protocol
+It is a bit-oriented **data link** protocol.
+
+Frame Structure description on Zhihu: [HDLC Protocol](https://zhuanlan.zhihu.com/p/627037730)
+
 
 ## OSI-RM Model
 
