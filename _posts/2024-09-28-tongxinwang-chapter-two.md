@@ -104,6 +104,8 @@ Why call it "Virtual Circuit Switching"? Because they are just "logically connec
 ***Lots of things to add...***
 
 ## Protocol
+
+### Standards: A Uniform Protocol
 It's a must to establish a system to communicate and organize all hardware devices within the network.
 In telephone networks, the system is called "Signaling", while in data networks, it is called "Network Protocol". To make them interconnected, **standard** is also required. Typical standards include:
 
@@ -116,11 +118,12 @@ In telephone networks, the system is called "Signaling", while in data networks,
 
 #### Error Control: Frame Error Issues
 Here are the main error control techniques:
-1. Forward Error Correction (FEC): It is a type of redundancy technique that detects and corrects errors in data, such as LDPC codes, Hamming codes, etc.
+1. Forward Error Correction (FEC, 前向纠错): It is a type of redundancy technique that detects and corrects errors in data, such as LDPC codes, Hamming codes, etc.
 
-2. Automatic Repeat Request (ARQ): It is a type of error control technique that retransmits lost or corrupted data segments. It is often used in **scenarios where no strict real-time communication is required.**
+2. Automatic Repeat Request (ARQ, 自动请求重传): It is a type of error control technique that retransmits lost or corrupted data segments. It is often used in **scenarios where no strict real-time communication is required.**[Typical ARQ Protocols](https://zhuanlan.zhihu.com/p/261152357)
 
-3.
+3. Hybrid Error Correction (HEC, 混合纠错): It is a combination of FEC and ARQ, where FEC is used for detecting and correcting errors, and ARQ is used for retransmitting lost or corrupted data segments.
+
 #### Flow Control: Speed lssues
 
 #### Congestion Control: Global Issues
