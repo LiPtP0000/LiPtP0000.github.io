@@ -133,6 +133,11 @@ Frame Structure description on Zhihu: [HDLC Protocol](https://zhuanlan.zhihu.com
 
 ## OSI-RM Model
 
+{: .box-note}
+**O**pen **S**ystem **I**nterconnection **R**eference **M**odel
+
+***Vertically*** A layer provides a service to the one above, while ***horizontally*** talks to its peer using a *protocol*.
+
 Layer | Name | Function |
 : --- :|: --- :|: --- :  
 7 | Application | Provides application-specific services, such as **HTTP Service**, **FTP Service**, etc.
@@ -143,7 +148,7 @@ Layer | Name | Function |
 2 | Data Link | Provides data link-specific services, such as error detection and correction, flow control, etc.
 1 | Physical | Provides physical-layer services, such as transmission of raw bits over a physical medium, such as copper or fiber optics.
 
-
+Here's a link for reference:[Protocol Layers and Service Model](https://blog.csdn.net/m0_52025973/article/details/115674167)
 
 -----------
 
