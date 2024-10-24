@@ -151,7 +151,7 @@ Frame Structure description on Zhihu: [HDLC Protocol](https://zhuanlan.zhihu.com
 
 {: .box-note}
 **O**pen **S**ystem **I**nterconnection **R**eference **M**odel
-
+r
 <br/>
 ![OSI-RM Model](/assets/img/Tongxinwang-images/osi.png){: .mx-auto.d-block :}
 <br/>
