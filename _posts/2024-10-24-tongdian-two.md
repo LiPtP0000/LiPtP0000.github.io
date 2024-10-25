@@ -68,3 +68,7 @@ $$ F = F_1 +\frac{F_2-1}{G_1}+\frac{F_3-1}{G_1G_2}+\frac{F_4-1}{G_1G_2G_3}+\cdot
 dBm 单位（室温 17 摄氏度，常用）：
 
 $$S_{(dBm)} = -174(dBm) + 10 \log_{10} B_N + N_F + D(dB)$$
+
+使用电压幅度$$E_A$$描述的接收灵敏度：
+
+$$E_A = 4 \times 10^{-3} \times \sqrt{R_A DB_N F} (\miu V)$$
