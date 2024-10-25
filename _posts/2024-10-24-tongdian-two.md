@@ -72,3 +72,6 @@ $$S_{(dBm)} = -174(dBm) + 10 \log_{10} B_N + N_F + D(dB)$$
 使用电压幅度$$E_A$$描述的接收灵敏度：
 
 $$E_A = 4 \times 10^{-3} \times \sqrt{R_A DB_N F} (\miu V)$$
+
+{: .box-warning}
+这里的$$D$$是无量纲 SNR，$$B_N$$ 使用通道带宽计算，单位 kHz。$$F$$为无量纲的噪声系数。
