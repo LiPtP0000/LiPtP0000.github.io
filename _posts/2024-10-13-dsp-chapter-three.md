@@ -11,17 +11,17 @@ author: LiPtP
 这一章围绕DFT以及DFT的快速算法展开。我们将从DFS引出DFT，进而提出简化算法复杂度的DFT算法——FFT。我们还将简单讨论Chirp-z变换，以及FFT在线性卷积、IDFT、相关函数计算上的应用。
 
 ## 几个问题
-1. 为什么要DFT？
+- 为什么要DFT？
 
 {:.box-note}
 一个信号的DTFT在频域内是一个**连续的周期函数**，对于连续信号来说，难以用计算机存储，因此我们需要一种离散的频域表示方法！DFT就是这样一种离散的频域表示方法。
 
-2. DFS vs. DFT
+- DFS vs. DFT
 
 {:.box-note}
 DFS (Discrete Fourier Series) 针对的是周期序列，而DFT (Discrete Fourier Transform) 针对的是有限长序列。DFT相当于从一个周期信号的“主值区间”完成了DFS的工作。
 
-3. DFT 的分辨率和什么有关？
+- DFT 的分辨率和什么有关？
 
 {:.box-note}
 **分辨率定义为采样频率与信号点数相除。**只有信号的截取长度$$N$$。和补零多少是无关的，因为补零只是相当于对一个相同的DTFT采用了不同的采样密度而已。
