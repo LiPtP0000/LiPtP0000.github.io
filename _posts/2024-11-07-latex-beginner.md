@@ -11,14 +11,14 @@ mathjax: true
 ---
 
 {: .box-note}
-在本教程中，你可以掌握 Vscode 本地 $$\latex$$ 编辑器的使用，以及在线 $$\latex$$ 编辑器 `Overleaf` 的使用方法。你还可以学到一些 $$\latex$$ 的基础指令，生成一个基本的文档。
+在本教程中，你可以掌握 Vscode 本地 LaTeX 编辑器的使用，以及在线 LaTeX 编辑器 `Overleaf` 的使用方法。你还可以学到一些 LaTeX 的基础指令，生成一个基本的文档。
 
 # LaTeX 是什么？
 参见 [【LaTeX】新手教程：从入门到日常使用](https://www.zhihu.com/tardis/zm/art/456055339?source_id=1005)
 
 # 如何使用 LaTeX 写文档？
 ## 本地撰写
-笔者推荐基于 Vscode 插件 `LaTeX Workshop` 的 $$\latex$$ 编写方法。配置结束后，你可以在 Vscode 中编写并运行 $$\latex$$ 文件并生成文档。
+笔者推荐基于 Vscode 插件 `LaTeX Workshop` 的 LaTeX 编写方法。配置结束后，你可以在 Vscode 中编写并运行 LaTeX 文件并生成文档。
 
 请参照：[Vscode-Latex配置教程](https://zhuanlan.zhihu.com/p/166523064) 进行配置。
 
@@ -27,7 +27,7 @@ mathjax: true
 
 ## 合作撰写
 
-我们也会经常碰到合作写文档的问题。我们迫切地需要一个能够同时编辑的在线平台。那么请试试[Overleaf]{https://overleaf.com}吧。只需要注册一个账号就能提供多人共享（免费版只能两人同时编辑，但也OK）的tex编辑器，非常爽。
+我们也会经常碰到合作写文档的问题。我们迫切地需要一个能够同时编辑的在线平台。那么请试试[Overleaf](https://overleaf.com)吧。只需要注册一个账号就能提供多人共享（免费版只能两人同时编辑，但也OK）的tex编辑器，非常爽。
 
 
 
@@ -102,8 +102,8 @@ mathjax: true
 
 - 插入表格
 
-三线表采用 `longtable` package就可以了。正常的网格表可以使用[表生成器]{https://www.tablesgenerator.com/}，注意加上`[htbp]`使其浮动，从而灵活排版。
+三线表采用 `longtable` package就可以了。正常的网格表可以使用[表生成器](https://www.tablesgenerator.com/)，注意加上`[htbp]`使其浮动，从而灵活排版。
 
 
 # 报错怎么办？
-$$\latex$$ 报错太玄学，建议不看。
+LaTeX 报错太玄学，建议不看。
