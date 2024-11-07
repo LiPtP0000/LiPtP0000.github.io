@@ -2,7 +2,6 @@
 _site
 .sass-cache
 .vagrant
-
 # general
 .DS_Store
 Thumbs.db
@@ -12,4 +11,4 @@ Gemfile.lock
 
 beautiful-jekyll-theme-*.gem
 
-.code-workspace
+LiPtP0000.github.io.code-workspace
